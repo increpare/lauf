@@ -59,7 +59,7 @@ class EinSpieler {
 
 		zeit=13;
 		//Truetype fonts look a LOT better when we don't scale the canvas!
-		Gfx.resizescreen(0, 0);
+		// Gfx.resizescreen(0, 0);
 		Text.font = GUI.font;
 
 		//initial all globals here
@@ -89,7 +89,7 @@ class EinSpieler {
 		Text.display(40,h/5,S("Spielstand: ","Score: ")+score, PAL.titelFarbe);
 
 		if (zeit>12){
-			Text.display(Text.CENTER,h/5+25,S("YO YO YO","YO YO YO"), PAL.titelFarbe);				
+			Text.display(Text.CENTER,h/5+25,S("VERSENDEN NUR 1!","SUBMIT ONLY 1's!"), PAL.titelFarbe);				
 		} else if (zeit>11){
 			if (altZeit>12){
 				mPlayNote(57803926,50.0,1.0,1.0);

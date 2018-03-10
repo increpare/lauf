@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-  <set name="windowwidth" value="160" />
-  <set name="windowheight" value="120" />
+  <set name="windowwidth" value="320" />
+  <set name="windowheight" value="240" />
   
 	<meta 
     title="Lauf" 
@@ -14,11 +14,11 @@
 	<app 
       main="haxegon.Load"
       path="bin" 
-      file="lauf ̰" 
+      file="lauf" 
    />
 
   <window width="${windowwidth}" height="${windowheight}" if="flash || cpp || neko"></window>
-  <window width="${windowwidth}" height="${windowheight}" if="html5 || mobile"></window>
+  <window width="0" height="0" if="html5 || mobile"></window>
 	 
 	<window
       fps="60"

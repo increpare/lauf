@@ -105,7 +105,7 @@ class ZweiSpieler {
 
 		zeit=13;
 		//Truetype fonts look a LOT better when we don't scale the canvas!
-		Gfx.resizescreen(0, 0);
+		// Gfx.resizescreen(0, 0);
 		Text.font = GUI.font;
 
 		//initial all globals here
@@ -151,7 +151,7 @@ class ZweiSpieler {
 
 		l++;
 		if (zeit>12){
-			Text.display(Text.CENTER,16*(l++),S("YO YO YO","YO YO YO"), PAL.titelFarbe);				
+			Text.display(Text.CENTER,16*(l++),S("VERSENDEN NUR 1!","SUBMIT ONLY 1's!"), PAL.titelFarbe);				
 		} else if (zeit>11){
 			if (altZeit>12){
 				mPlayNote(57803926,50.0,1.0,1.0);
