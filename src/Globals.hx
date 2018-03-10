@@ -1,8 +1,21 @@
 package;
 import haxegon.*;
 
+#if js
+import js.Browser;
+#end
+
+
 class Globals
 {
+    public static function mPlayNote(seed:Int,frequency:Float,length:Float,volume:Float){
+        #if js
+        untyped playNote(seed,frequency,length,volume/2);
+        #end
+    }
+
+
+
   public static var PAL = {
       fg : Col.WHITE,   
       bg : Col.BLACK,
@@ -19,16 +32,16 @@ class Globals
       smalltextsize:1,
       textsize:1,
       buttonTextSize:1,
-      buttonPaddingX : 40,
-      buttonPaddingY : 5,
-      linethickness : 2,
-      titleTextSize:2,
-      subTitleTextSize:2,
-      vpadding:10,
-      healthbarheight:20,
-      subSubTitleTextSize:2,
+      buttonPaddingX : 20,
+      buttonPaddingY : 3,
+      linethickness : 1,
+      titleTextSize:1,
+      subTitleTextSize:1,
+      vpadding:5,
+      healthbarheight:10,
+      subSubTitleTextSize:1,
       
-      screenPaddingTop:30,
+      screenPaddingTop:15,
       
       font:"dos",
   };
